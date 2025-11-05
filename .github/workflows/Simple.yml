@@ -59,8 +59,9 @@ jobs:
 
       - name: Build the application
         run: |
-          echo "Building the app..."
+          echo "Installing npm..."
           npm install
+          echo "Building the app..."
           npm run build
 
       - name: Use secret
